@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>木葉なぎさ | 日記アーカイブ</title>
+    <meta
+      name="description"
+      content="木葉なぎさの日記アーカイブ。カテゴリーで絞り込みながら、過去のブログや近況メモを読めます。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">KN</span>
+          <span class="brand-text">
+            <strong>木葉なぎさ</strong>
+            <small>Diary Archive</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="主要メニュー">
+          <a href="./index.html#about">自己紹介</a>
+          <a href="./index.html#schedule">配信予定</a>
+          <a href="./index.html#links">リンク</a>
+          <a href="./fanart.html">ファンアート</a>
+          <a href="./diary.html">日記</a>
+          <a href="./index.html#contact">問い合わせ</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="diary-filter card">
+            <div class="diary-filter-row">
+              <p class="panel-label">Category</p>
+              <div class="category-chips">
+                <button class="category-chip is-active" type="button" data-category="all">すべて</button>
+                <button class="category-chip" type="button" data-category="配信関連">配信関連</button>
+                <button class="category-chip" type="button" data-category="ファンアート">ファンアート</button>
+                <button class="category-chip" type="button" data-category="創作活動">創作活動</button>
+                <button class="category-chip" type="button" data-category="企画メモ">企画メモ</button>
+                <button class="category-chip" type="button" data-category="日常">日常</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="archive-diary-list" id="archive-diary-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 木葉なぎさ / Nagisa Konoha</p>
+        <p>Diary Archive</p>
+      </footer>
+    </div>
+
+    <script src="./data/fanart.js"></script>
+    <script src="./data/diary.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

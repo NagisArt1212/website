@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>木葉なぎさ | ファンアートギャラリー</title>
+    <meta
+      name="description"
+      content="木葉なぎさのファンアートギャラリー。#NagisArt の最新ピックアップと作品紹介をまとめたページ。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Montserrat:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">KN</span>
+          <span class="brand-text">
+            <strong>木葉なぎさ</strong>
+            <small>Fan Art Gallery</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="主要メニュー">
+          <a href="./index.html#about">自己紹介</a>
+          <a href="./index.html#schedule">配信予定</a>
+          <a href="./index.html#links">リンク</a>
+          <a href="./fanart.html">ファンアート</a>
+          <a href="./diary.html">日記</a>
+          <a href="./index.html#contact">問い合わせ</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="gallery-hero card">
+          <div class="gallery-hero-copy">
+            <p class="eyebrow">Fan Art Gallery</p>
+            <h1>#NagisArt</h1>
+            <p>
+              フォトギャラリーみたいにゆっくり眺められます。
+              <br />最新ピックアップ3枚が数秒ごとに切り替わります。
+            </p>
+            <a class="button button-secondary" href="./index.html">トップへ戻る</a>
+          </div>
+
+          <div class="gallery-hero-side"> 
+            <img src="./assets/nagisa-standing.png" alt="木葉なぎさの立ち絵" />
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="gallery-slider card">
+            <div class="gallery-stage" data-slider="fanart-gallery" id="fanart-gallery-stage"></div>
+
+            <div class="gallery-dots" aria-label="ギャラリー切り替え" id="fanart-gallery-dots"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <p class="section-kicker">Archive Collection</p>
+            <h2>ファンアート一覧</h2>
+            <p class="section-description">
+              上のギャラリーとは別に、これまでいただいた大切なイラストを紹介しています。
+            </p>
+          </div>
+
+          <div class="artwork-list" id="fanart-archive-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 木葉なぎさ / Nagisa Konoha</p>
+        <p>Fan Art Tag: #NagisArt</p>
+      </footer>
+    </div>
+
+    <script src="./data/fanart.js"></script>
+    <script src="./data/diary.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
